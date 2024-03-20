@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --blue1: #2B54FF;
+    --blue1: #3960fc;
     --blue2: #34abf5;
-    --blue3: #2B54FF;
+    --blue3: #2447d1;
     --detalhe: #3BA3FA5C;
 }
 
@@ -38,6 +38,23 @@ html {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.452);
+    animation: background-animation 9s ease-in-out infinite;
+    background-size: 200% 200%;
+}
+
+
+@keyframes background-animation{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .nav-Home {
@@ -67,7 +84,7 @@ html {
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 70px;
+    gap: 100px;
     text-align: center;
     color: white;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.267);
@@ -225,6 +242,61 @@ html {
     right: 40%;
 }
 
-#curriculos {
+.section {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.section .content_curriculos{
+    max-width: 400px;
+    display: grid;
+    gap: 25px;
+    color: #474646;
+}
+.section .content_curriculos h2{
+    text-transform: uppercase;
+}
+.section .img_area{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.section .img_area .effect-img{
+    position: absolute;
+    height: 300px;
+    width: 460px;
+    background: rgba(59, 163, 250, 0.36);;
+    border-radius: 20px;
+    bottom: 100px;
+    left: -50px;
+    z-index: -99;
+}
+
+.section .content_curriculos a{
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(45deg, var(--blue1), var(--blue2));
+    max-width: 245px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.177);
+    transition: .3s ease;
+}
+.section .content_curriculos a:hover{
+    filter: brightness(1.1);
+    transition: .3s ease;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.211);
+}
+
+#experiencias{
     height: 100vh;
 }
