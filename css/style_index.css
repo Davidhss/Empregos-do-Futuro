@@ -29,6 +29,45 @@ html {
     background-color: var(--blue1);
 }
 
+nav{
+    height: 140px;
+    background-color: white;
+    border-bottom: .5px solid #cccccc;
+    position: fixed;
+    color: #343434;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav-content{
+    display: flex;
+    gap: 50px;
+}
+nav .nav-content a{
+    text-decoration: none;
+    color: #343434;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s ease;
+}
+nav .nav-content a:hover{
+    font-size: 1.1rem;
+}
+nav .botao_nav{
+    width: 135px;
+    height: 50px;
+    background: linear-gradient(87deg, #3DB0F8 0%, #3A92FD 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
 #home {
     width: 100vw;
     height: 100vh;
@@ -40,6 +79,7 @@ html {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.452);
     animation: background-animation 9s ease-in-out infinite;
     background-size: 200% 200%;
+    z-index: 100;
 }
 
 
@@ -102,7 +142,6 @@ html {
 
 #home .content-Home .meiota .texto-home img {
     height: 50px;
-
 }
 
 #home .content-Home img {
@@ -188,16 +227,14 @@ html {
         transform: translateX(30px);
     }
 }
-
-#frase .bola{
+.bola{
     position: absolute;
     background-image: linear-gradient(180deg, #3EB3F8 0%, #3A8BFE 100%);
     filter: drop-shadow(0px 4px 7.6px rgba(0, 0, 0, 0.25));
     border-radius: 50%;
     animation: bola-animation 5s infinite alternate;
 }
-
-#frase .bola.primeira{
+.bola.primeira{
     height: 80px;
     width: 80px;
     top: 20%;
@@ -205,29 +242,28 @@ html {
     animation-duration: 6s;
 }
 
-#frase .bola.segunda{
+.bola.segunda{
     height: 60px;
     width: 60px;
     top: 70%;
     left: 30%;
     animation-duration: 7s;
 }
-
-#frase .bola.terceira{
+.bola.terceira{
     height: 55px;
     width: 55px;
     top: 15%;
     left: 50%;
 }
 
-#frase .bola.quarta{
+.bola.quarta{
     width: 40px;
     height: 40px;
     bottom: 10%;
     right: 10%;
 }
 
-#frase .bola.quinta{
+.bola.quinta{
     height: 30px;
     width: 30px;
     top: 30%;
@@ -235,7 +271,7 @@ html {
     animation-duration: 9s;
 }
 
-#frase .bola.sexta{
+.bola.sexta{
     height: 90px;
     width: 90px;
     bottom: 5%;
@@ -299,4 +335,105 @@ html {
 
 #experiencias{
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    color: #313131;
+}
+#experiencias .dados-importantes{
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    gap: 80px;
+    grid-template-columns: 260px 260px 260px;
+    cursor: default;
+}
+#experiencias .dados-importantes .dados:hover{
+    transform: scale(1.1);
+}
+#experiencias .dados-importantes .dados{
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    height: 125px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ease;
+    font-weight: 600;
+    gap: 10px;
+}
+#experiencias .dados-importantes .dados .dado{
+    font-size: 1.8rem;
+}
+#experiencias .dados-importantes .dados.meio{
+    height: 150px;
+    width: 255px;
+    font-size: 1.2rem;
+}
+
+#feirao{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#feirao .card{
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+    max-width: 1040px;
+    align-items: center;
+    background: rgba(61, 167, 249, 0.15);
+    border-radius: 15px;
+    justify-content: center;
+}
+#feirao .card .content-feirao{
+    display: grid;
+    color: #313131;
+    gap: 15px;
+}
+#feirao .card .content-feirao h2{
+    text-transform: uppercase;
+}
+#feirao .card .content-feirao a{
+    text-decoration: none;
+    color: #313131;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+#feirao .card .content-feirao a:hover{
+    padding-left: 10px;
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    color: #343434;
+    line-height: 110%;
+    font-size: 13px;
+}
+footer .social-medias{
+    display: flex;
+    gap: 40px;
+    font-size: 1.8rem;
+}
+footer .social-medias a{
+    color: #343434;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+footer .social-medias a:hover{
+    font-size: 1.9rem;
 }
