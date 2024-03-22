@@ -70,31 +70,13 @@ nav .botao_nav{
 
 #home {
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     position: relative;
-    background-image: linear-gradient(45deg, var(--blue1), var(--blue2));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.452);
-    animation: background-animation 9s ease-in-out infinite;
-    background-size: 200% 200%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.521);
     z-index: 100;
-}
-
-
-@keyframes background-animation{
-    0%{
-        background-position: 0 50%;
-    }
-
-    50%{
-        background-position: 100% 50%;
-    }
-
-    100%{
-        background-position: 0 50%;
-    }
 }
 
 .nav-Home {
@@ -105,6 +87,7 @@ nav .botao_nav{
     justify-content: center;
     gap: 50px;
     transition: .3s ease;
+    z-index: 112;
 }
 
 .nav-Home a {
@@ -125,10 +108,21 @@ nav .botao_nav{
     justify-content: center;
     display: flex;
     gap: 100px;
+    margin-top: -50px;
     text-align: center;
     color: white;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.267);
     cursor: default;
+    z-index: 101;
+}
+
+#home video{
+    position: absolute;
+    width: 100%;
+    min-height: 93vh;
+    max-height: 93vh;
+    filter: brightness(.4);
+    object-fit: cover;
 }
 
 #home .content-Home .meiota .texto-home {

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+
+/* Background da pagina */
+.fundo{
+    fill: #ffffff;
+    height: 100vh;
+    box-shadow: 0px 6px 13.5px 0px rgba(0, 0, 0, 0.25) inset;
+    position: relative;
+}
+
+/* Navbar */
+.navbar{
+    padding: 2%;
+}
+
+.navbar img{
+    width: 260px;
+}
+
+
+
+/* Inicio do Conteúdo (TITULO) */
+.titulo-curriculo{
+    color: #00368ef1;
+    font-family: Inter;
+    line-height: normal;
+    text-transform: uppercase;  
+    text-align: center;
+    padding-left: 2.2cm;
+    padding-top: 7px;
+}
+
+.titulo-curriculo h2{
+    float: left;
+    font-style: normal;
+    font-size: 24;
+}
+
+.titulo-curriculo h3{
+    float: left;
+    font-style: bold;
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+/* Formulário */
+.form{
+    color: rgba(1, 87, 164, 0.80);
+    font-family: Inter;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    white-space: normal;
+    padding-top: 4%;
+    padding-left: 2.2cm;
+}
+
+/* Campo do Aluno (Checkbox) */
+.form p{
+    font-size: 20px;
+}
+
+.form label{
+    font-size: 18px;
+    white-space: inherit;
+    word-spacing: 1px;
+    margin: 2px;
+    align-items: center;
+}
+
+.checkbox{
+    border-radius: 5px;
+    width: 19px;
+    height: 19px;
+    align-items: center;
+    border: 2px solid #0157a4;
+    background-color: #FFFFFF;
+}
+
+/* Campo dos Dados pessoais*/
+.content-camp-dados h2{
+    color: #0157a4;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.content-camp-dados P{
+    font-size: 17px;
+}
+
+/*Campo dos inputs*/
+.content-camp-input{
+    padding-top: 10px;
+}
+
+.input-text{
+    border-radius: 10px;
+    border: 2px solid #0157a4;
+    width: 530px;
+    height: 34px;
+    align-items: center;
+}
+
+input::placeholder{
+    color: #0157a4;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-left: 17px;
+}
+
+/* Input Menor (Direita e esquerda)*/
+.content-camp-input-menor{
+    padding-top: 10px;
+}
+
+
+
+.input-text-menor-direita{
+    border-radius: 10px;
+    border: 2px solid #0157a4;
+    width: 250px;
+    height: 34px;
+}
+
+.input-text-menor-esquerda{
+    border-radius: 10px;
+    border: 2px solid #0157a4;
+    width: 250px;
+    height: 34px;
+    margin-left: 24.20px;
+}
+
+/* Gênero */
+
+.content-camp-genero{
+    padding-top: 10px;
+    color: #0157a4;
+    font-weight: 400;
+    font-family: Inter;
+    font-style: bold;
+    font-size: 19px;
+}
+
+.gene{
+    font-style: bold;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.content-camp-genero label{
+    font-style: bold;
+    font-size: 17px;
+    font-weight: 400;
+    color: #0157a4;
+}
+
+.content-camp-genero-check{
+    padding-top: 5px;
+}
+
+
+/* Imagem */
+
+.img-fundo{
+    transform: rotate(-0.145deg);
+    flex-shrink: 0;
+    display: flex;
+    float: right;
+    position: absolute;
+    padding-left: 48%;
+    padding-top: 6%;
+    width: 95%;
+    z-index: -99;
+}
+
+.rodape{
+    height: 20%;
+    background: linear-gradient(67deg, #009FD3 2.5%, #45B6FD 45.6%, #2B54FF 98.5%);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    border: 0;
+    
+    position: relative;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+    position: absolute;
+    bottom: 24%;
+    right: 37px;
+    float: left;
+}
+
+.button{
+    border-radius: 10px;
+    border: none;
+    background: #FFF;
+    width: 180px;
+    padding: 10px ;
+    color: #494949;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    float: left;
+}
+
+

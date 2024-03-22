@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre o seu currículo</title>
+    <link rel="stylesheet" href="../css/style-pag2-curriculo.css">
+    <link rel="icon" href="../img/mala-de-viagem.png">
+</head>
+
+<body>
+    <div class="img-fundo">
+        <img src="../img/20943903-removebg-preview.png" alt="">
+    </div>
+
+    <!--Fundo pagina somente o background-->
+    <div class="fundo">
+
+        <!--Navbar contendo somente a logo com link para volta para a home-->
+        <div class="navbar">
+            <a href="../index.html"><img src="../img/Logo.png" alt="" class="img"></a>
+        </div>
+
+        <!--Começo do conteúdo-->
+        <div class="titulo dados-academico">
+            <h2>Cadastre a suas vagas</h2>
+        </div>
+
+        <!--Formulário-->
+        <div class="form">
+
+            <form action="" id="curriculo">
+                <div class="content-camp-forma">
+                    <select name="formacao" id="forma" class="forma">
+                        <option value="">Formação Acadêmica</option>
+                        <option value="Doutorado Com">Doutorado Completo</option>
+                        <option value="Doutorado In">Doutorado Incompleto</option>
+                        <option value="Fundamental">Ensino Fundamental</option>
+                        <option value="Medio Com">Ensino Médio Completo</option>
+                        <option value="Medio In">Ensino Médio Incompleto</option>
+                        <option value="Superior Com">Ensino Superior Completo</option>
+                        <option value="Superior In">Ensino Superior Incompleto</option>
+                        <option value="Mestrado Com">Mestrado Completo</option>
+                        <option value="Mestrado In">Mestrado Incompleto</option>
+                        <option value="Pos Com">Pós-Graduação Completa</option>
+                        <option value="Pos In">Pós-Graduação Incompleta</option>
+                    </select>
+                </div>
+
+                <div class="content-camp-text">
+                    <input type="text" size="30" placeholder="Qualificações e cursos complementares"
+                        class="input input-g">
+                </div>
+
+                <div class="content-camp-text">
+                    <input type="text" size="30" placeholder="Objetivo Profissional" class=" input input-m">
+                </div>
+
+                <div class="content-camp-text">
+                    <input type="text" size="30" placeholder="Experiência Profissional" class="input input-g">
+                </div>
+
+                <div class="titulo">
+                    <h2>Dados de Endereço</h2>
+                </div>
+
+                <div class="content-camp-text">
+                    <input type="text" size="30" placeholder="CEP" class="input input-text-menor-direita">
+                    <input type="text" size="30" placeholder="Número" class="input input-text-menor-esquerda">
+                </div>
+
+                <div class="content-camp-text">
+                    <input type="text" size="30" placeholder="Endereço" class="input input-p">
+                </div>
+
+                <div class="arquivo">
+                    <p>Anexe aqui o seu Currículo</p>
+                    <label for="arquivo-curriculo">Escolher Ficheiro</label>
+                    <input type="file" id="arquivo-curriculo" name="arquivo-curriculo" accept="pdf"class="input-arquivo">
+                </div>
+
+            </form>
+
+
+        </div>
+
+        <!--Rodape-->
+        <div class="rodape">
+            <div class="botao">
+                <input type="submit" form="curriculo" class="button">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

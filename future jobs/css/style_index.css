@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --blue1: #2B54FF;
+    --blue2: #34abf5;
+    --blue3: #2B54FF;
+    --detalhe: #3BA3FA5C;
+}
+
+body, html{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue1);
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(45deg, var(--blue1), var(--blue2));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.452);
+}
+
+.nav-Home{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    transition: .3s ease;
+}
+.nav-Home a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+.nav-Home a:hover{
+    font-size: 1.1rem;
+}
+
+#home .content-Home{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.267);
+    cursor: default;
+}
+#home .content-Home .meiota .texto-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+#home .content-Home .meiota .texto-home img{
+    height: 50px;
+
+}
+#home .content-Home img{
+    height: 400px;
+}
+#home .content-Home h1{
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.171);
+    text-transform: uppercase;
+}
+#home .content-Home .botao{
+    padding: 20px;
+    width: 100%;
+}
+#home .content-Home .botao a{
+    color: #5e5d5d;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: default;
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.158);
+}
+#home .content-Home .botao a:hover{
+    filter: brightness(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.253);
+    color: #2B54FF;
+}
+
+.home-inferior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.home-inferior i{
+    color: white;
+    animation: arrow-site .3s infinite alternate;
+}
+
+@keyframes arrow-site{
+    from {
+        padding-bottom: 10px;
+        opacity: 1;
+    }
+
+    to{
+        padding-bottom: 30px;
+        opacity: .2;
+    }
+}
+
+#frase{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+#frase h2{
+    text-transform: uppercase;
+    color: #5e5d5d;
+}
+#frase .bola img{
+    position: absolute;
+}
+#frase .bola.primeira img{
+    height: 80px;
+    top: 20%;
+    left: 15%;
+}
+#frase .bola.segunda img{
+    height: 60px;
+    top: 70%;
+    left: 30%;
+}
+#frase .bola.terceira img{
+    height: 55px;
+    top: 15%;
+    left: 50%;
+}
+#frase .bola.quarta img{
+    bottom: 10%;
+    right: 10%;
+}
+#frase .bola.quinta img{
+    height: 30px;
+    top: 30%;
+    right: 10%;
+}
+#frase .bola.sexta img{
+    height: 90px;
+    bottom: 5%;
+    right: 40%;
+}
+
+#curriculos{
+    height: 100vh;
+}

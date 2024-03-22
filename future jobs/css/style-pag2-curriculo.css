@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+
+/* Background da pagina */
+.fundo{
+    fill: #ffffff;
+    height: 100vh;
+    box-shadow: 0px 6px 13.5px 0px rgba(0, 0, 0, 0.25) inset;
+    position: relative;
+
+}
+/* Navbar */
+.navbar{
+    padding: 2%;
+}
+
+.navbar img{
+    width: 260px;
+}
+
+
+/*Titulo*/
+.titulo{
+    color: #00368ef1;
+    font-family: Inter;
+    line-height: normal;
+    text-transform: uppercase;  
+    padding-top: 7px;
+}
+
+.dados-academico{
+    padding-left: 2.2cm;
+}
+
+/* Formulário */
+.form{
+    color: rgba(1, 87, 164, 0.80);
+    font-family: Inter;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    white-space: normal;
+    padding-top: 15px;
+    padding-left: 2.2cm;
+}
+
+
+/*Formação acadêmica*/
+.forma{
+    border-radius: 10px;
+    border: 2px solid #0157a4;
+    width: 315px;
+    height: 40px;
+}
+
+select{
+    color: #0157a4;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+option{
+    color: #0157a4;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-left: 17px;
+}
+
+.content-camp-text{
+    margin-top: 17px;
+}
+
+.input{
+    border-radius: 10px;
+    border: 2px solid #0157a4;
+    width: 480px;
+    padding-left: 17px;
+}
+
+.input-g{
+    height: 90px;
+}
+
+.input-m{
+    height: 55px;
+}
+
+.input::placeholder{
+    color: #0157a4;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+
+.input-text-menor-direita{
+    width: 220px;
+    height: 40px;
+}
+
+.input-text-menor-esquerda{
+    width: 220px;
+    height: 40px;
+    margin-left: 35px;
+}
+
+.input-p{
+    height: 40px;
+}
+
+/*ficheiro*/
+
+.arquivo{
+    color: rgba(1, 87, 164, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+input[type="file"] {
+    display: none;
+}
+label {
+    padding: 10px;
+    width: 215px;
+    height: 45px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: bold;
+    font-family: Inter;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(89deg, #07c2ff -6.54%, #0b85d7 106.51%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Imagem */
+
+.img-fundo{
+    transform: rotate(-0.145deg);
+    flex-shrink: 0;
+    display: flex;
+    float: right;
+    position: absolute;
+    padding-left: 48%;
+    padding-top: 15%;
+    width: 95%;
+    z-index: -99;
+}
+
+/*Rodape*/
+.rodape{
+    height: 140px;
+    background: linear-gradient(67deg, #009FD3 2.5%, #45B6FD 45.6%, #2B54FF 98.5%);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    border: 0;
+    position: relative;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+    position: absolute;
+    bottom: 24%;
+    right: 37px;
+    float: left;
+}
+
+.button{
+    border-radius: 10px;
+    border: none;
+    background: #FFF;
+    width: 180px;
+    padding: 10px ;
+    color: #494949;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.content-camp-text-g{
+    padding-top: 15px;
+}
+
+
+
+.content-camp-text-m{
+    padding-top: 15px;
+}
+
+.input-m{
+    border-radius: 10px;
+    border: 2px solid #0157a4;
+    width: 480px;
+    height: 55px;
+    padding: 17px;
+}
+
+input::placeholder{
+    color: #0157a4;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.End{
+    color: #00368ef1;
+    font-family: Inter;
+    line-height: normal;
+    text-transform: uppercase;  
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+    font-style: normal;
+    font-size: 24;
+}
+*/
+
+
