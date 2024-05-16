@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --blue1: #3960fc;
+    --blue2: #34abf5;
+    --blue3: #2447d1;
+    --detalhe: #3BA3FA5C;
+}
+
+body,
+html {
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue1);
+}
+
+nav{
+    height: 140px;
+    background-color: white;
+    border-bottom: .5px solid #cccccc;
+    position: fixed;
+    color: #343434;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav-content{
+    display: flex;
+    gap: 50px;
+}
+nav .nav-content a{
+    text-decoration: none;
+    color: #343434;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s ease;
+}
+nav .nav-content a:hover{
+    font-size: 1.1rem;
+}
+nav .botao_nav{
+    width: 135px;
+    height: 50px;
+    background: linear-gradient(87deg, #3DB0F8 0%, #3A92FD 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+#home {
+    width: 100vw;
+    height: 93vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.521);
+    z-index: 100;
+}
+
+.nav-Home {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    transition: .3s ease;
+    z-index: 112;
+}
+
+.nav-Home a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.nav-Home a:hover {
+    font-size: 1.1rem;
+}
+
+#home .content-Home {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+    margin-top: -50px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.267);
+    cursor: default;
+    z-index: 101;
+}
+
+#home video{
+    position: absolute;
+    width: 100%;
+    min-height: 93vh;
+    max-height: 93vh;
+    filter: brightness(.3);
+    object-fit: cover;
+}
+
+#home .content-Home .meiota .texto-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#home .content-Home .meiota .texto-home img {
+    height: 50px;
+}
+
+#home .content-Home img {
+    height: 400px;
+}
+
+#home .content-Home h1 {
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.171);
+    text-transform: uppercase;
+}
+
+#home .content-Home .botao {
+    padding: 20px;
+    width: 100%;
+}
+
+#home .content-Home .botao a {
+    color: #5e5d5d;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: default;
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.158);
+}
+
+#home .content-Home .botao a:hover {
+    filter: brightness(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.253);
+    color: #2B54FF;
+}
+
+.home-inferior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.home-inferior i {
+    color: white;
+    animation: arrow-animation .3s infinite alternate;
+}
+
+@keyframes arrow-animation {
+    from {
+        padding-bottom: 10px;
+        opacity: 1;
+    }
+
+    to {
+        padding-bottom: 30px;
+        opacity: .2;
+    }
+}
+
+#frase {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#frase h2 {
+    text-transform: uppercase;
+    color: #5e5d5d;
+}
+
+@keyframes bola-animation{
+    from{
+        transform: translateX(0px);
+    }
+
+    to{
+        transform: translateX(30px);
+    }
+}
+.bola{
+    position: absolute;
+    background-image: linear-gradient(180deg, #3EB3F8 0%, #3A8BFE 100%);
+    filter: drop-shadow(0px 4px 7.6px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+    animation: bola-animation 5s infinite alternate;
+}
+.bola.primeira{
+    height: 80px;
+    width: 80px;
+    top: 20%;
+    left: 15%;
+    animation-duration: 6s;
+}
+
+.bola.segunda{
+    height: 60px;
+    width: 60px;
+    top: 70%;
+    left: 30%;
+    animation-duration: 7s;
+}
+.bola.terceira{
+    height: 55px;
+    width: 55px;
+    top: 15%;
+    left: 50%;
+}
+
+.bola.quarta{
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    right: 10%;
+}
+
+.bola.quinta{
+    height: 30px;
+    width: 30px;
+    top: 30%;
+    right: 10%;
+    animation-duration: 9s;
+}
+
+.bola.sexta{
+    height: 90px;
+    width: 90px;
+    bottom: 5%;
+    right: 40%;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.section .content_curriculos{
+    max-width: 400px;
+    display: grid;
+    gap: 25px;
+    color: #474646;
+}
+.section .content_curriculos h2{
+    text-transform: uppercase;
+}
+.section .img_area{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.section .img_area .effect-img{
+    position: absolute;
+    height: 300px;
+    width: 460px;
+    background: rgba(59, 163, 250, 0.36);;
+    border-radius: 20px;
+    bottom: 100px;
+    left: -50px;
+    z-index: -99;
+}
+
+.section .content_curriculos a{
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(45deg, var(--blue1), var(--blue2));
+    max-width: 245px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.177);
+    transition: .3s ease;
+}
+.section .content_curriculos a:hover{
+    filter: brightness(1.1);
+    transition: .3s ease;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.211);
+}
+
+#experiencias{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    color: #313131;
+}
+#experiencias .dados-importantes{
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    gap: 80px;
+    grid-template-columns: 260px 260px 260px;
+    cursor: default;
+}
+#experiencias .dados-importantes .dados:hover{
+    transform: scale(1.1);
+}
+#experiencias .dados-importantes .dados{
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    height: 125px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ease;
+    font-weight: 600;
+    gap: 10px;
+}
+#experiencias .dados-importantes .dados .dado{
+    font-size: 1.8rem;
+}
+#experiencias .dados-importantes .dados.meio{
+    height: 150px;
+    width: 255px;
+    font-size: 1.2rem;
+}
+
+#feirao{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#feirao .card{
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+    max-width: 1040px;
+    align-items: center;
+    background: rgba(61, 167, 249, 0.15);
+    border-radius: 15px;
+    justify-content: center;
+}
+#feirao .card .content-feirao{
+    display: grid;
+    color: #313131;
+    gap: 15px;
+}
+#feirao .card .content-feirao h2{
+    text-transform: uppercase;
+}
+#feirao .card .content-feirao a{
+    text-decoration: none;
+    color: #313131;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+#feirao .card .content-feirao a:hover{
+    padding-left: 10px;
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    color: #343434;
+    line-height: 110%;
+    font-size: 13px;
+}
+footer .social-medias{
+    display: flex;
+    gap: 40px;
+    font-size: 1.8rem;
+}
+footer .social-medias a{
+    color: #343434;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+footer .social-medias a:hover{
+    font-size: 1.9rem;
+}
