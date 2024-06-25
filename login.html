@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Empregos do Futuro</title>
+    <link rel="stylesheet" href="./css/style_login.css">
+    <link rel="icon" type="img/png" href="/img/Logo.png" />
+
+    <!-- Biblioteca dp icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Javascript (mostra e esconder) Senha -->
+    <script src="./js/ocultarSenha.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./img/Logo.png" alt="Logo"></a>
+    
+            <id class="nav-content">
+                <a href="#curriculos">Vagas</a>
+                <a href="#feirao">Sobre</a>
+                <a href="#empresas">Empresas</a>
+            </id>
+    
+            <a href="" class="botao_nav">ENTRAR</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="left_side">
+                <form method="post" action="./control/verificar.jsp">
+                    <div class="titulo_form">
+                        <h2>Bem vindo(a) ao futuro!</h2>
+
+                        <span>Insira suas informações para continuar</span>
+                    </div>
+                    <div class="info">
+                        <label for="txtEmail">E-Mail</label>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="teste@teste.com" autocomplete="off">
+                    </div>
+
+                    <div class="info">
+                        <label for="txtSenha">Senha</label>
+                        <input type="password" name="txtSenha" id="txtSenha" placeholder="Insira sua senha">
+                        <i class="bi bi-eye-fill" id="btn-Senha" onclick="mostrarSenha()"></i>
+                    </div>
+
+                    <div class="botao">
+                        <input type="submit" value="Entrar" id="btnEntrar">
+                    </div>
+
+                    <div class="semConta">
+                        Não possui conta? <a href="./cadastro.html">Cadastre-se</a>
+                    </span>
+                </form>
+            </div>    
+
+            <div class="right_side">
+                <img src="./img/Ilustracao_Login.svg" alt="Imagem Login">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

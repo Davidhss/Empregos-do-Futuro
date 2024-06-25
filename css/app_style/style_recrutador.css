@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body,
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4A4A4A;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 62px;
+    background-color: #3475FF;
+    color: white;
+}
+nav a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .3s ease;
+}
+nav a:hover{
+    font-size: 17px;
+    font-weight: 600;
+}
+nav .parte{
+    display: flex;
+    gap: 26px;
+}
+
+.info input, .info textarea, .info select{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px ;
+    background-color: #F0F0F0;
+    padding: 15px;
+    padding-left: 25px;
+    border: none;
+    transition: .3s ease;
+}
+
+.content{
+    display: grid;
+    gap: 36px;
+}
+
+.titulo{
+    display: grid;
+    gap: 12px;
+}
+
+button.btnCadastro{
+    border-radius: 5px;
+    padding: 14px 34px;
+    background: #3A8BFE;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button.btnCadastro:hover{
+    filter: brightness(1.05);
+    font-weight: 700;
+}
+
+.info input:focus, .info textarea:focus, .info select:focus{
+    outline: none;
+    border: solid 2px #2b56ff;
+}
+
+form{
+    display: grid;
+    gap: 25px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+form .line{
+    display: flex;
+    gap: 25px;
+}
+
+.titulo span.cargo{
+    font-weight: bold;
+    color: #3475FF;
+    margin-top: -10px;
+    margin-bottom: -30px;
+}

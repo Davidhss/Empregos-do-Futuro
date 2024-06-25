@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body,
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+nav{
+    height: 140px;
+    background-color: white;
+    color: #343434;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav-content{
+    display: flex;
+    gap: 50px;
+}
+nav .nav-content a{
+    text-decoration: none;
+    color: #343434;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s ease;
+}
+nav .nav-content a:hover{
+    font-size: 1.1rem;
+}
+nav .botao_nav{
+    width: 135px;
+    height: 50px;
+    background: linear-gradient(87deg, #3DB0F8 0%, #3A92FD 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.right_side{
+    width: 100%;
+    height: 100%;
+}
+
+.left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_side img{
+    height: 80vh;
+    object-fit: cover;
+    padding-bottom: 58px;
+}
+
+@media screen and (max-width:800px){
+    .right_side img{
+        display: none;
+    }
+
+    .left_side{
+        height: 100vh;
+    }
+}
+
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 55px;
+}
+
+.titulo_form{
+    color: #6B6B6B;
+    padding-bottom: 5px;
+}
+
+.titulo_form h2{
+    text-align: left;
+    font-size: 22px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.titulo_form span{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.entrada_dados{
+    padding: 20px;
+}
+
+.info{
+    padding: 8px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.info input{
+    width: 360px;
+    height: 45px;
+    border-radius: 5px ;
+    background-color: #F0F0F0;
+    padding: 15px;
+    padding-left: 25px;
+    border: none;
+    transition: .3s ease;
+}
+
+.info label{
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #6B6B6B;
+    font-weight: 600;
+}
+
+.info i{
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 4px;
+    right: 8%;
+    color: #6b6b6b;
+}
+
+.botao{
+    padding: 14px;
+    padding-top: 20PX;
+}
+
+.botao input{
+    width: 359px;
+    height: 45px;
+    border-radius: 5px;
+    background: linear-gradient(88deg, #42A9FD 0%, #2b56ff 100%);
+    color: #F0F0F0;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.info input:focus{
+    outline: none;
+    border-bottom: solid 1.8px #2b56ff;
+}
+
+.semConta{
+    color: #6B6B6B;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.semConta a{
+    font-weight: 600;
+    color: #6B6B6B;
+}
+
+

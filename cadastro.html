@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Empregos do Futuro</title>
+    <link rel="stylesheet" href="css/style_cadastro.css">
+
+    <!-- Biblioteca do icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Javascript (mostra e esconder) Senha -->
+    <script src="./js/ocultarSenha.js"></script>
+
+    <!-- Javascript das Validações -->
+    <script src="./js/validacoes.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="left_side">
+            <form action="./control/cadastrarAluno.jsp" name="formCadastro" id="formCadastro">
+                <a href="./index.html"><img src="./img/Logo.png" alt="Empregos do Futuro" class="botton_home"></a>
+
+                <div class="titulo_form">
+                    <h2>Cadastrar</h2>
+                    <span>
+                        Vamos iniciar sua incrível jornada de sucesso?
+                        Preencha os campos para se juntar a nós.
+                    </span>
+                </div>
+
+                <div class="entrada_dados">
+                    <div class="linha">
+                        <div class="info">
+                            <input type="text" id="txtNome" name="txtNome" placeholder="Nome" autocomplete="off">
+                            <span class="erro" id="erroNome"></span>
+                        </div>
+
+                        <div class="info">
+                            <input type="text" id="txtCelular" name="txtCelular" placeholder="Celular"
+                                autocomplete="off">
+                            <span class="erro" id="erroCelular"></span>
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="info">
+                            <input type="text" id="txtEmail" name="txtEmail" placeholder="Email" autocomplete="off">
+                            <span class="erro" id="erroEmail"></span>
+                        </div>
+                        <div class="info">
+                            <input type="text" id="txtDataNasc" name="txtDataNasc" placeholder="Data de Nascimento"
+                                onfocus="(this.type='date')" onblur="(this.type='text')">
+                            <span class="erro" id="erroDataNasc"></span>
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="info">
+                            <input type="password" id="txtSenha" name="txtSenha" placeholder="Senha" autocomplete="off">
+                            <i class="bi bi-eye-fill" id="btn-Senha" onclick="mostrarSenha()"></i>
+                        </div>
+                        <div class="info">
+                            <input type="password" id="txtConfirmaSenha" name="txtConfirmacaoSenha" placeholder="Confirme a senha" autocomplete="off">
+                            <i class="bi bi-eye-fill" id="btn-ConfirmaSenha" onclick="mostrarSenha()"></i>
+                        </div>
+                    </div>
+                    <div class="verifsenha">
+                        <span class="requisito" id="erroSenhaChar">Mínimo 6 caracteres</span>
+                        <span class="requisito" id="erroSenhaUpper">Pelo menos uma letra maiúscula</span>
+                        <span class="requisito" id="erroSenhaLower">Pelo menos uma letra minúscula</span>
+                        <span class="requisito" id="erroSenhaNum">Pelo menos um número</span>
+                    </div>
+
+
+                    <div class="botao">
+                        <input type="button" onclick="validarDados()" class="btnEntrar" value="Cadastrar"
+                            id="btnCadastrar">
+                    </div>
+
+                    <div class="comConta">
+                        Já possui uma conta? <a href="./login.html">Entrar</a>
+                    </div>
+            </form>
+        </div>
+
+        <div class="right_side">
+            <img src="./img/imagemCadastro.png" alt="Imagem Cadastro">
+        </div>
+    </main>
+</body>
+
+</html>
